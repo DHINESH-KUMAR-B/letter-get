@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="image/dklogo.png">
+  <title>DK Student Letter Requester</title>
+  <style>
+    /* your CSS stays the same */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DK Student Letter Request</h1>
+  </header>
+
+  <div class="container">
+    <form id="letterForm">
+      <label>Student Name</label>
+      <input type="text" name="name" required>
+
+      <label>Department</label>
+      <select name="department" required>
+        <option value="">Select</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="BME">BME</option>
+        <option value="AI&DS">AI&DS</option>
+        <option value="AI&ML">AI&ML</option>
+        <option value="RA">RA</option>
+        <option value="IT">IT</option>
+        <option value="FT">FT</option>
+      </select>
+
+      <label>Problem</label>
+      <input type="text" name="problem">
+
+      <label>What type of solution you want?</label>
+      <textarea name="reason" rows="4" required></textarea>
+
+      <label>Date</label>
+      <input type="date" name="date" required>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>please support as to win</p>
+  </footer>
+
+  <!-- External JS file -->
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
